@@ -1,0 +1,100 @@
+// font
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900")
+@import "reset"
+@import "variables"
+
+
+// wrapper
+.wrapper
+	max-width: 1250px
+	margin: auto
+
+.main-screen
+	display: block
+	position: relative
+
+// header
+.background
+	position: absolute
+	width: 100vw
+	height: 100vh
+	z-index: -1
+
+
+.logo
+	font-size: 32px
+	color: $white
+	text-transform: uppercase
+
+.header, .navbar
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+.header
+	padding-top: 20px
+
+.menu-item
+	a
+		color: $white
+		margin: 0 20px
+		text-transform: uppercase
+		transition: all .3s ease
+		font-family: "Raleway"
+		font-size: 0.9rem
+		&:hover
+			color: $grey
+	.fa-search
+		color: $green
+		padding: 10px
+		background-color: $white
+
+
+// banner
+
+
+.banner
+	text-align: center
+	margin-top: 30vh
+	color: $white
+
+.sup_title
+    margin-bottom: 25px
+    font-size: 1.1rem
+    text-transform: uppercase
+    font-weight: 600
+    color: #FFF
+
+.banner-title
+    margin-bottom: 50px
+    font-size: 36px
+    font-weight: 200
+    color: #FFF
+    overflow: hidden
+
+// button
+.button
+    font-size: 13px 
+    border-radius: 25px 
+    padding: 11px 25px
+    background-color: transparent 
+    border: 2px solid #fff 
+    text-transform: uppercase 
+    color: #fff
+
+.button
+	transition: all .3s ease
+
+
+.take-action
+	margin-left: 30px
+	background-color: $white
+	color: $green
+	border: none
+	&:hover
+		background-color: $green
+		color: $white
+
+.read-more
+	&:hover
+		background-color: $white
+		color: $green

@@ -33,6 +33,8 @@
 	padding-top: 20px
 
 .menu-item
+	&:first-child a
+		color: $grey
 	a
 		color: $white
 		margin: 0 20px
@@ -40,7 +42,7 @@
 		transition: all .3s ease
 		font-family: "Raleway"
 		font-size: 0.9rem
-		&:hover
+		&:hover, 			
 			color: $grey
 	.fa-search
 		color: $green
@@ -202,10 +204,10 @@
 
 .newsletter
 	margin: 40px 0 100px
-	padding: 40px 25%
+	padding: 40px 15%
 	text-align: center
 	color: $white
-	background: url("./images/slide-02.jpg")
+	background: url("./images/slide-02.jpg") center no-repeat
 
 .newsletter-subtitle
 	font-size: .95em
@@ -243,7 +245,7 @@
 	text-transform: uppercase
 	color: $green
 	background-color: $white
-	padding: 10px
+	padding: 10px 15px
 	border-radius: 50px
 	font-weight: 500
 	font-size: 0.8em
@@ -302,7 +304,7 @@
 // team
 .team
 	padding: 80px 0
-	background: url("./images/slide-03.jpg")
+	background: url("./images/slide-03.jpg") center no-repeat
 	color: $white
 	text-align: center
 
@@ -332,6 +334,7 @@
 
 .team-profile
 	transition: all .5s ease
+	width: 100%
 
 
 .team-profile:hover
@@ -367,9 +370,8 @@
 
 .contact-additional-text
 	margin-left: 10px
-	color: $black
 	font-size: 0.9em
-	font-weight: 60000
+	font-weight: 600
 	text-decoration: none
 	color: $black
 
@@ -432,3 +434,5 @@
 	a
 		color: $green
 		padding: 5px
+
+@import "media"

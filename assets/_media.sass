@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1200px)
+    .wrapper 
+        max-width: 960px
+
+@media only screen and (max-width: 992px)
+    .wrapper 
+        max-width: 720px
+    .about-container 
+        grid-template-columns: 45% 10% 45%
+    .header .menu-item
+        display: none
+        &:last-child
+            display: block
+    .header
+        align-items: center
+    .news-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        row-gap: 30px
+    .projects-container
+        grid-template-columns: 1fr
+
+    .projects-menu 
+        margin-top: 10px
+        display: flex
+        grid-gap: 30px
+
+    .newsletter-describe, .about-describe p
+        font-size: 0.7em
+
+    .newsletter-subtitle
+        font-size: 0.65em
+
+    .team-position
+        font-size: 0.6em
+
+    .about-title, .projects-title, .contact-us-title
+        font-size: 12px
+
+@media only screen and (max-width: 740px)
+    .about-container
+        grid-template-columns: 1fr

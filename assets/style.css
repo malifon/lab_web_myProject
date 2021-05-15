@@ -131,6 +131,10 @@ button:hover {
   padding-top: 20px;
 }
 
+.menu-item:first-child a {
+  color: #9a9a9a;
+}
+
 .menu-item a {
   color: #fff;
   margin: 0 20px;
@@ -347,10 +351,10 @@ button:hover {
 
 .newsletter {
   margin: 40px 0 100px;
-  padding: 40px 25%;
+  padding: 40px 15%;
   text-align: center;
   color: #fff;
-  background: url("./images/slide-02.jpg");
+  background: url("./images/slide-02.jpg") center no-repeat;
 }
 
 .newsletter-subtitle {
@@ -405,7 +409,7 @@ button:hover {
   text-transform: uppercase;
   color: #5fb759;
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 50px;
   font-weight: 500;
   font-size: 0.8em;
@@ -480,7 +484,7 @@ button:hover {
 
 .team {
   padding: 80px 0;
-  background: url("./images/slide-03.jpg");
+  background: url("./images/slide-03.jpg") center no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -519,6 +523,7 @@ button:hover {
 .team-profile {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  width: 100%;
 }
 
 .team-profile:hover {
@@ -561,9 +566,8 @@ button:hover {
 
 .contact-additional-text {
   margin-left: 10px;
-  color: #212529;
   font-size: 0.9em;
-  font-weight: 60000;
+  font-weight: 600;
   text-decoration: none;
   color: #212529;
 }
@@ -668,4 +672,68 @@ button:hover {
 .footer-icon a {
   color: #5fb759;
   padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 720px;
+  }
+  .about-container {
+    -ms-grid-columns: 45% 10% 45%;
+        grid-template-columns: 45% 10% 45%;
+  }
+  .header .menu-item {
+    display: none;
+  }
+  .header .menu-item:last-child {
+    display: block;
+  }
+  .header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+  .projects-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .projects-menu {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 30px;
+  }
+  .newsletter-describe, .about-describe p {
+    font-size: 0.7em;
+  }
+  .newsletter-subtitle {
+    font-size: 0.65em;
+  }
+  .team-position {
+    font-size: 0.6em;
+  }
+  .about-title, .projects-title, .contact-us-title {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }

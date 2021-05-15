@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
-    <div class="main-screen">
+    <section class="main-screen">
       <img src="./assets/images/slide-01.jpg" alt="banner" class="background" />
       <div class="wrapper">
         <header class="header">
@@ -44,9 +44,9 @@
           </div>
         </section>
       </div>
-    </div>
+    </section>
 
-    <div class="wrapper">
+    <section class="wrapper">
       <div class="about">
         <h2 class="about-title">about us</h2>
 
@@ -166,7 +166,33 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="wrapper">
+        <h3 class="newsletter-subtitle">subscribe newsletters</h3>
+
+        <h2 class="newsletter-title">Don’t miss this chance!</h2>
+
+        <h3 class="newsletter-describe">
+          Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus,
+          et auctor elit. Vivamus tincidunt tristique convallis. Ut nec odio vel
+          arcu euismod semper nec ac sem.
+        </h3>
+
+        <form action="POST" class="newsletter-form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-email"
+            placeholder="Enter your email..."
+            required
+          />
+          <button type="submit" class="newsletter-submit">subscribe now</button>
+        </form>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="wrapper">

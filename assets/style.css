@@ -345,6 +345,79 @@ button:hover {
   margin-left: 5px;
 }
 
+.newsletter {
+  margin: 40px 0 100px;
+  padding: 40px 25%;
+  text-align: center;
+  color: #fff;
+  background: url("./images/slide-02.jpg");
+}
+
+.newsletter-subtitle {
+  font-size: .95em;
+  font-weight: 500;
+  ttfont-family: "Raleway";
+  text-transform: uppercase;
+}
+
+.newsletter-title {
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+.newsletter-describe {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+.form-email {
+  margin-top: 40px;
+  background-color: transparent;
+  outline: none;
+  width: 60%;
+  outline-color: #fff;
+  border: solid 1px #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-right: 20px;
+  color: white;
+  font-family: 'Raleway';
+}
+
+.form-email::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form-email:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-email::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-email::placeholder {
+  color: #fff;
+}
+
+.newsletter-submit {
+  text-transform: uppercase;
+  color: #5fb759;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.8em;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.newsletter-submit:hover {
+  color: #fff;
+  background-color: #5fb759;
+}
+
 .footer {
   display: block;
   background: linear-gradient(145deg, #339b9e 0%, #68cc98 100%);

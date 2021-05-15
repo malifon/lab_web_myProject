@@ -140,7 +140,7 @@
 	text-transform: uppercase
 	color: $white
 	font-family: "Raleway"
-	font-weight: 500
+	font-weight: 600
 	background-color: $green
 	border-radius: 30px
 	&:hover
@@ -252,6 +252,103 @@
 		color: $white
 		background-color: $green
 
+// team
+.team
+	padding: 80px 0
+	background: url("./images/slide-03.jpg")
+	color: $white
+	text-align: center
+
+.team-subtitle
+	text-transform: uppercase
+	font-size: 0.95em
+	font-weight: 400
+
+.team-title
+	font-weight: 800
+	font-size: 2em
+	margin: 20px 0 40px
+
+.team-container
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 40px
+
+.team-name, .team-position
+	text-transform: uppercase
+
+.team-name
+	font-size: 1em
+	margin: 20px 0 10px
+
+.team-position
+	font-size: 0.8em
+
+.team-profile
+	transition: all .5s ease
+
+
+.team-profile:hover
+	cursor: pointer
+	filter: grayscale(1)
+
+
+// contact-us
+
+.contact-us
+	padding: 100px
+	background: url("./images/dotted-map-bg.png") no-repeat center
+
+.contact-us-title
+	color: $green
+	text-transform: uppercase
+	font-size: 0.95em
+	font-weight: 500
+
+.contact-us-container
+	grid-template-columns: 34% 66%
+	margin-top: 20px
+
+.contact-additional-title
+	color: $black
+	font-size: 2em
+	line-height: 1em
+	margin-bottom: 30px
+
+.contact-additional-item
+	align-items: center
+	margin-bottom: 30px
+
+.contact-additional-text
+	margin-left: 10px
+	color: $black
+	font-size: 0.9em
+	font-weight: 60000
+	text-decoration: none
+	color: $black
+
+.contact-form
+	input,	textarea
+		padding: 15px
+		font-family: "Raleway"
+		color: $grey
+		border: 1px solid #ddd
+		outline: none
+		font-size: 0.95em
+	input
+		margin-bottom: 30px
+		width: 48%
+		&::placeholder
+			font-weight: 400
+	textarea
+		width: 100%
+		height: 100px
+		margin-bottom: 30px
+		color: $grey
+		resize: none
+	.flex
+		justify-content: space-between
+
+			
 
 // footer
 .footer

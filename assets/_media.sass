@@ -38,5 +38,62 @@
         font-size: 12px
 
 @media only screen and (max-width: 740px)
-    .about-container
+    .about-container, .contact-us-container
         grid-template-columns: 1fr
+    .about-describe
+        grid-column: 1
+    .about-additional
+        margin-bottom: 30px
+    .wrapper 
+        max-width: 540px
+    .news-container
+        grid-template-columns: 1fr
+        grid-gap: 40px
+    .newsletter-describe, .about-describe p
+        font-size: 0.9em
+    .newsletter
+        margin: 20px 0
+    .projects
+        margin: 50px 0
+    .team-container,
+    .projects-img
+        grid-template-columns: repeat(2, 1fr)
+    .team
+        background-size: cover
+    .contact-us
+        padding: 50px 0
+    .form-email
+        width: 80%
+        margin-bottom: 20px
+@media only screen and (max-width: 576px)
+    
+    .team-container, .about-icons, .projects-img
+        grid-template-columns: 1fr
+    .wrapper
+        width: 100% 
+        padding-right: 15px 
+        padding-left: 15px 
+        margin-right: auto 
+        margin-left: auto 
+    #subscribe input
+        width: 60%
+    .footer-describe 
+        text-align: center
+        margin-bottom: 20px
+    .footer-container
+        flex-direction: column
+    .contact-form 
+        .flex
+            flex-wrap: wrap
+        input
+            width: 100%
+    .newsletter
+        padding: 40px 5%
+    .projects-menu
+        flex-wrap: wrap
+        grid-gap: 10px
+        margin: 20px 0 30px
+    .menu-item
+        margin: 0
+    .footer-icon
+        margin: 0 7px
